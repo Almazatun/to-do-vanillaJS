@@ -5,4 +5,4 @@
 ## App :heavy_plus_sign:includes ability to:
 * add todo
 * delete todo
-* rena
+* rename todo
