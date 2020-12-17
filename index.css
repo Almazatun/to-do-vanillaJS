@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  box-sizing: 4px;
+}
+
+.content {
+  height: 100vh;
+  background: #267fc1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h3 {
+  font-size: 36px;
+  font-family: Roboto, sans-serif;
+  color: #ffffff;
+}
+.content form {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  justify-content: center;
+  padding: 20px;
+}
+.content form div label input {
+  background: #fff;
+  outline: none;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  border-radius: 0.25em;
+  margin: 0 10px 0 0;
+  cursor: not-allowed;
+  border: none;
+}
+.content form div .todo_btn {
+  background: lightpink;
+  outline: none;
+  border: none;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  border-radius: 0.25em;
+  margin: 0 10px 0 0;
+}
+.content form div .todo_btn:hover {
+  transition: all 0.5s ease;
+  background: #82e89c;
+}
+.content form select {
+  width: 100%;
+  min-width: 6ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  outline: none;
+}
+.content form select::-ms-expand {
+  display: none;
+}
+.content form {
+  margin: 0 0 20px 0;
+}
+.content .todo_container ul {
+  list-style: none;
+}
+.content .todo_container .todo_list {
+  width: 350px;
+  border-radius: 4px;
+  padding: 10px;
+  background: #e8e8e8;
+  min-height: 60px;
+}
+.content .todo_container .todo_list .todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .todo_container .todo_list .todo li {
+  flex: 1;
+}
+.content .todo_container .todo_list .fall_down {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+.content .todo_container .todo_list .todo {
+  transition: all 0.5s ease;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  background: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.content .todo_container .todo_list .todo .todo_item {
+  background: white;
+  border-radius: 4px;
+  padding: 6px;
+}
+.content .todo_container .todo_list .todo button {
+  margin: 5px;
+  font-family: sans-serif;
+  padding: 3px;
+}
+.content .todo_container .todo_list .completedItem {
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=index.css.map */
